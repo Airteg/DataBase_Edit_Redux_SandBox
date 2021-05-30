@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+table {
+  margin-top: 1vmax;
+  width: 92vw;
+  border-collapse: collapse;
+}
+thead {
+}
+thead > tr > th,
+tfoot > tr > th {
+  background: #ccffcc;
+  border-collapse: red;
+  border: solid 0.3px black;
+}
+th {
+  flex-basis: 23vw;
+  padding: 5px;
+}
+tbody {
+  font-weight: normal;
+}
+tfoot {
+  font-style: italic;
+  font-size: 0.75rem;
+}
+tfoot > tr > th {
+  border: solid 0.3px black;
+  justify-content: flex-start;
+
+  text-align: right;
+}
+button {
+  width: 10vw;
+}
+
+#modal form {
+  width: max(min(28vw, 450px), 300px);
+  height: max(min(28vmin, 450px), 300px);
+
+  background: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#modal form * {
+  margin: 2px;
+}
+#modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: scale(1); */
+  /* transform: scale(0); */
+}
+.visiblity {
+  /* display: none; */
+  transform: scale(0);
+}
+
+/* #modal.active {
+  transform: scale(1);
+}
+.modal__content > form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.modal__content > form > label {
+  margin: 5px;
+}
+.modal__content {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+} */
